@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板语法</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="text">
+    {{message}}
+</div>
+<div id="content_text">
+    <div v-html="something">
+
+    </div>
+</div>
+<div id="app">
+    <!--v-model是双向绑定-->
+    <label for="r1">修改颜色</label><input type="checkbox" v-model="use" id="r1">
+    <br><br>
+    <div v-bind:class="{'class1': use}">
+        v-bind:class 指令
+    </div>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#text',
+        data:{
+            message:"我是一只小菜鸟"
+        }
+    });
+    new Vue({
+        el:'#content_text',
+        data:{
+            something:"一只小小鸟"
+        }
+    });
+    new Vue({
+        el: '#app',
+        data:{
+            use: false
+        }
+    });
+</script>
+<div id="reverse_str">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">反转字符串</button>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el: '#reverse_str',
+        data: {
+            message: 'Runoob!'
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+</script>
+<!--过滤器-->
+<div id="filter">
+    {{a_message|capitalize}}
+</div>
+<script type="text/javascript">
+    //过滤器是函数，可以串联多个：{{message|filter1|filter2}}，可以接受参数：{{message|filter('arg1','arg2'}}
+    new Vue({
+        el:'#filter',
+        data:{
+            a_message:"helloworld"
+        },
+        filters:{
+            capitalize:function(value){
+                if (!value) return ''
+                value=value.toString()
+                return value.charAt(0).toUpperCase()+value.slice(1)
+            }
+        }
+    })
+</script>
+<!--
+v-bind完整：<a v-bind:href="url"></a>
+v-bind缩写：<a :href"url"></a>
+
+
+v-on完整：<a v-on:click="something"></a>
+v-on缩写：<a @click="something:></a>
+-->
+</body>
+</html>

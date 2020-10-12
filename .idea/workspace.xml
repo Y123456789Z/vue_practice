@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f342995-ecaf-40f2-9110-a2dca8008b93" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hEclknZPUvBA2Q4vYV1GE6pJWs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f342995-ecaf-40f2-9110-a2dca8008b93" name="Default Changelist" comment="" />
+      <created>1599579845451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599579845451</updated>
+      <workItem from="1599579846529" duration="3472000" />
+      <workItem from="1599628649398" duration="2889000" />
+      <workItem from="1599638740291" duration="4147000" />
+      <workItem from="1599666916752" duration="1928000" />
+      <workItem from="1599703545821" duration="3354000" />
+      <workItem from="1599753412244" duration="1421000" />
+      <workItem from="1599790299293" duration="5433000" />
+      <workItem from="1599806217172" duration="74000" />
+      <workItem from="1599987075713" duration="52000" />
+      <workItem from="1600011157077" duration="665000" />
+      <workItem from="1600013213691" duration="1392000" />
+      <workItem from="1600064571757" duration="1023000" />
+      <workItem from="1600081494211" duration="7373000" />
+      <workItem from="1601904200144" duration="40000" />
+      <workItem from="1602221724437" duration="43000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="187" key="#Notifications" timestamp="1602221751369">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="187" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1602221751369" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599644020426">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599644020426" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599704972667">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599704972667" />
+  </component>
+</project>

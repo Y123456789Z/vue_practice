@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件处理器</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="app1">
+    <button v-on:click="counter++">增加一</button>
+    <p>被点击了{{counter}}次</p>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app1',
+        data:{
+            counter:0
+        }
+    })
+</script>
+<div>我们也可以在点击事件中使用方法method</div>
+<div id="app2">
+    <button v-on:click="hello">hello world</button>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app2',
+        data:{
+            name:'vuejs'
+        },
+        methods:{
+            hello:function(event){
+                alert('hello'+this.name);
+                if(event){
+                    alert(event.target.tagName)
+                }
+            }
+        }
+    })
+</script>
+<div id="app3">
+    <button v-on:click="say('hi')">say hi</button>
+    <button v-on:click="say('what')">say what</button>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app3',
+        methods:{
+            say:function(message){
+                alert(message)
+            }
+        }
+    })
+</script>
+<div>
+    使用.event（event可以是stop/capture/prevent等
+    <p>
+        按键修饰符keyup.keycode（keycode可以是1 2 3.....也可以是vue自定义的enter/tab/delete...等）
+    </p>
+</div>
+</body>
+</html>

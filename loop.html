@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环语句</title>
+    <script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div>循环语句</div>
+<div id="app1">
+    <ol>
+        <li v-for="site in sites">
+            {{site.name}}
+        </li>
+    </ol>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app1',
+        data:{
+            sites:[
+                {name:'one'},
+                {name:'two'},
+                {name:'three'}
+            ]
+        }
+    })
+</script>
+<div id="app2">
+    <ul>
+        <li v-for="(value,key) in object"><!--括号里还可以加index表示索引-->
+            {{key}}:{{value}}
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app2',
+        data:{
+            object:{
+                name:'菜鸟教程',
+                url:'http://www.runoob.com',
+                slogan:'学的不仅仅是技术，更是梦想'
+            }
+        }
+    })
+</script>
+<div id="app3">
+    <ol>
+        <li v-for="(n) in 10">
+            {{n}}
+        </li>
+    </ol>
+</div>
+<script type="text/javascript">
+    new Vue({
+        el:'#app3'
+    })
+</script>
+</body>
+</html>

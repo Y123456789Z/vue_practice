@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<p>全局组件通过vue.component</p>
+<div id="app">
+    <runoob></runoob><!--这里是自定义的组件-->
+</div>
+
+<script>
+    // 注册
+    //vue.component中第一个参数表示要注册的组件名，后面是配置选项
+    Vue.component('runoob', {
+        template: '<h1>自定义组件!</h1>'
+    })
+    // 创建根实例
+    new Vue({
+        el: '#app'
+    })
+</script>
+<p>
+    局部组件通过new vue中创建
+</p>
+<div id="app1">
+    <runoob_></runoob_>
+</div>
+
+<script>
+    var Child = {
+        template: '<h1>自定义组件!</h1>'
+    }
+
+    // 创建根实例
+    new Vue({
+        el: '#app1',
+        components: {
+            // <runoob_> 将只在父模板可用
+            'runoob_': Child
+        }
+    })
+</script>
+<div>自定义组件不可有其他字符，只能为英文字母</div>
+<div id="app2">
+    <child message="hello!"></child>
+</div>
+
+<script>
+    // 注册
+    Vue.component('child', {
+        // 声明 props
+        props: ['message'],
+        // 同样也可以在 vm 实例中像 "this.message" 这样使用
+        template: '<span>{{ message }}</span>'
+    })
+    // 创建根实例
+    new Vue({
+        el: '#app2'
+    })
+</script>
+<p>
+    传值问题，父传子
+</p>
+<div id="app3">
+    <div>
+        <input v-model="parentMsg">
+        <br>
+        <child_ v-bind:message1="parentMsg"></child_>
+    </div>
+</div>
+
+<script>
+    // 注册
+    Vue.component('child_', {
+        // 声明 props
+        props: ['message1'],
+        // 同样也可以在 vm 实例中像 "this.message" 这样使用
+        template: '<span>{{ message1 }}</span>'
+    })
+    // 创建根实例
+    new Vue({
+        el: '#app3',
+        data: {
+            parentMsg: '父组件内容'
+        }
+    })
+</script>
+//
+</body>
+</html>
